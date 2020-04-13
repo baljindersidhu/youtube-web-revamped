@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-scaffold": {
+    "youtube-web-revamped": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-scaffold",
+            "outputPath": "dist/youtube-web-revamped",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-scaffold:build"
+            "browserTarget": "youtube-web-revamped:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-scaffold:build:production"
+              "browserTarget": "youtube-web-revamped:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-scaffold:build"
+            "browserTarget": "youtube-web-revamped:build"
           }
         },
         "test": {
@@ -107,7 +107,7 @@
         }
       }
     },
-    "angular-scaffold-e2e": {
+    "youtube-web-revamped-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -116,11 +116,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-scaffold:serve"
+            "devServerTarget": "youtube-web-revamped:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-scaffold:serve:production"
+              "devServerTarget": "youtube-web-revamped:serve:production"
             }
           }
         },
@@ -136,5 +136,5 @@
       }
     }
   },
-  "defaultProject": "angular-scaffold"
+  "defaultProject": "youtube-web-revamped"
 }

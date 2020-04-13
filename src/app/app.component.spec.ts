@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-scaffold'`, () => {
+  it(`should have as title 'youtube-web-revamped'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('angular-scaffold');
+    expect(app.title).toEqual('youtube-web-revamped');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-scaffold!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to youtube-web-revamped!');
   });
 });
