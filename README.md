@@ -1,6 +1,12 @@
-# AngularScaffold
+# Youtube Web Revamped
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
+
+## App Template
+
+This [template](https://dribbble.com/shots/5082276-YouTube-desktop-application) is courtesy of [Filip Legierski](https://dribbble.com/kedavra). Explore cool templates like these on his portfolio.
+
+![AppTemplate](src/assets/images/app-template.png)
 
 ## Development server
 
