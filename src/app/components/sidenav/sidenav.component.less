@@ -1,0 +1,92 @@
+.container{
+    top: 0vh;
+    left: 0vw;
+
+    height: 100vh;
+    width: 14vw;
+    padding: 3vh 2vw;
+    
+    color: white;
+    background-color: var(--app-sidenav-bg-color);
+    
+    
+    .brand{
+        font-weight: 600;
+        font-size: 2.25vh;
+        font-family: 'Roboto Condensed', sans-serif;
+        
+        .brandIcon{
+
+            height: 3vh;
+            width: 1.6vw;
+            margin-right: 0.5vw;
+
+            img{
+                width: 100%;
+            }
+        }
+
+        .brandName{
+            text-shadow: 0px 0px 5px #ffffff7a;
+            opacity: 0.9;
+        }
+    }
+
+    .sidenavActions{
+        
+        animation: fade-in 1.5s ease-out;
+
+        .actionHeading{
+            text-transform: uppercase;
+            margin: 6vh 0vw 2vh 0vw;
+            font-size: 1.25vh;
+            font-weight: 600;
+            letter-spacing: 0.1vw;
+            text-shadow: 0px 0px 5px #ffffffad;
+        }
+
+        .action{
+            margin: 1.5vh 0vw;
+            cursor: pointer;
+            .actionIcon{
+                font-size: 2.25vh;
+                width: 1.75vw;
+                height: 3.5vh;
+                opacity: 0.7;
+            }
+
+            .actionLabel{
+                font-size: 1.6vh;
+                font-weight: 600;
+                opacity: 0.35;
+            }
+
+            &:hover{
+                .actionLabel{
+                    opacity: 0.7;
+                }
+            }
+
+            &:nth-child(2){
+                .actionIcon, .actionLabel{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .primaryButton.uploadVideo{
+        font-size: 1.3vh;
+        letter-spacing: 0.1vw;
+        padding: 1.5vh 2vw;
+        margin-top: 11.5vh;
+        animation: fade-in 1.5s ease-out;
+    }
+
+    .appVersion{
+        opacity: 0.2;
+        font-size: 1.25vh;
+        font-weight: bold;
+        margin: 1.5vh 0vw;
+    }
+}

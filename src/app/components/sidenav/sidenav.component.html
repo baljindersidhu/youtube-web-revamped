@@ -1,3 +1,34 @@
-<p>
-  sidenav works!
-</p>
+<div class="container positionAbsolute">
+	
+	<div class="row centerV brand">
+		<div class="brandIcon"><img src="assets/icons/brand-icon.svg" alt="brand_icon" aria-label="Brand Icon of Application"></div>
+		<div class="brandName">YouTube</div>
+	</div>
+
+	<div class="sidenavActions">
+		
+		<div class="actionHeading">menu</div>
+		<div class="row centerV action" *ngFor="let action of menuActions">
+			<span class="actionIcon" [ngClass]="action.getIconClass()"></span>
+			<div class="actionLabel">{{action.getLabel()}}</div>
+		</div>
+
+		<div class="actionHeading">library</div>
+		<div class="row centerV action" *ngFor="let action of libraryActions">
+			<span class="actionIcon" [ngClass]="action.getIconClass()"></span>
+			<div class="actionLabel">{{action.getLabel()}}</div>
+		</div>
+
+		<div class="actionHeading">playlist</div>
+		<div class="row centerV action" *ngFor="let action of playlists">
+			<span class="actionIcon" [ngClass]="action.getIconClass()"></span>
+			<div class="actionLabel">{{action.getLabel()}}</div>
+		</div>
+	</div>
+
+	<div class="column centerH">
+		<div class="primaryButton uploadVideo">upload video</div>
+		<div class="appVersion">{{appVersion}}</div>
+	</div>
+
+</div>
