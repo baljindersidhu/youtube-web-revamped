@@ -1,0 +1,39 @@
+.container{
+    background-image: url(../../../../assets/images/cover.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @height: 100vh;
+    @width: 82vw;
+    height: @height;
+
+    // to hide the spilled over blur effect
+    // showing in the sidenav
+    overflow: hidden;
+    animation: fade-in 1.5s ease-in-out;
+
+    .frost{
+        top: 0vh;
+        background: inherit;
+        height: @height;
+        width: @width;
+        filter: blur(5vh);
+    }
+
+    &::after{
+        content: '';
+        position: absolute;
+        height: @height;
+        width: @width;
+        top: 0vh;
+        background-color: var(--app-sidenav-bg-color);
+        opacity: 0.87;
+    }
+
+    .homePageContent{
+        height: @height;
+        width: @width;
+        overflow: hidden;
+    }
+}
