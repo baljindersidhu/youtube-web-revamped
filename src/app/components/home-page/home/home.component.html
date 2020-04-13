@@ -1,6 +1,30 @@
 <div class="container positionRelative">
 	<div class="positionAbsolute frost"></div>
-  	<div class="homePageContent positionRelative">
+</div>
+<div class="homePageContent positionAbsolute">
 		
-  	</div>
+	<!-- Search bar and User Component -->
+	<div class="header row centerV">
+		<span class="searchIcon mdi mdi-google-assistant"></span>
+		<div class="searchLabel">Search...</div>
+		<div class="fillParent"></div>
+		<div class="userFullName">anthony levis</div>
+		<div class="userAvatar"><img src="../../../../assets/images/avatar.png" alt="user-avatar" aria-label="user profile image" /></div>
+		<span class="userActions mdi mdi-menu-down"></span>
+	</div>
+
+	<div class="sectionHeading">Recommended Videos</div>
+
+	<app-recommended-videos></app-recommended-videos>
+	
+	<div class="sectionHeading row">
+		<div class="fillParent">Popular Channels</div>
+		<div class="fillParent">Youtube Mixes</div>
+	</div>
+
+	<div class="row">
+		<div class="fillParent"><app-popular-channels></app-popular-channels></div>
+		<div class="fillParent"><app-youtube-mixes></app-youtube-mixes></div>
+	</div>
+
 </div>

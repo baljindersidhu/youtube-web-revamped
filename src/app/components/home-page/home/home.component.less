@@ -1,11 +1,11 @@
+@height: 100vh;
+@width: 82vw;
+
 .container{
     background-image: url(../../../../assets/images/cover.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-
-    @height: 100vh;
-    @width: 82vw;
     height: @height;
 
     // to hide the spilled over blur effect
@@ -30,10 +30,60 @@
         background-color: var(--app-sidenav-bg-color);
         opacity: 0.87;
     }
+}
 
-    .homePageContent{
-        height: @height;
-        width: @width;
-        overflow: hidden;
+.homePageContent{
+    top: 0vh;
+    height: @height;
+    width: @width - 6vw;
+    overflow: hidden;
+    color: white;
+    padding: 0vh 3vw;
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+
+    .header{
+        padding: 2.5vh 0vw;
+
+        .searchIcon{
+            opacity: 0.5;
+            font-size: 2vh;
+        }
+    
+        .searchLabel{
+            .searchIcon;
+            font-weight: bold;
+            font-size: 1.6vh;
+            margin-left: 1vw;
+        }
+    
+        .userFullName{
+            text-transform: capitalize;
+            font-size: 1.6vh;
+            font-weight: bold;
+            letter-spacing: 0.05vw;
+        }
+    
+        .userAvatar{
+            height: 4.5vh;
+            width: 2vw;
+            margin: 0vh 1vw;
+            img{
+                width: 100%;
+            }
+        }
+    
+        .userActions{
+            cursor: pointer;
+        }
+    }
+
+
+    .sectionHeading{
+        opacity: 0.95;
+        font-size: 2.25vh;
+        padding: 6.25vh 0vw 3vh 0vw;
     }
 }

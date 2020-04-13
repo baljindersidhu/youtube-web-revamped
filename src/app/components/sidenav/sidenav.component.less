@@ -80,7 +80,14 @@
         letter-spacing: 0.1vw;
         padding: 1.5vh 2vw;
         margin-top: 10vh;
+        transition: opacity 0.25s linear, transform 0.1s ease-out;
         animation: fade-in 1.5s ease-out;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.9;
+            transform: scale(0.95);
+        }
     }
 
     .appVersion{
