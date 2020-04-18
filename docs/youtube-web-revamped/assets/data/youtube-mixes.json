@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Chill",
+        "caption": "assets/youtube-mixes/aaron-burden-cEukkv42O40-unsplash.jpg",
+        "videosCount": 50
+    },
+    {
+        "title": "Summer",
+        "caption": "assets/youtube-mixes/nattu-adnan-Ai2TRdvI6gM-unsplash.jpg",
+        "videosCount": 100
+    },
+    {
+        "title": "Night",
+        "caption": "assets/youtube-mixes/felix-mittermeier-Knwea-mLGAg-unsplash.jpg",
+        "videosCount": 150
+    },
+    {
+        "title": "Nature",
+        "caption": "assets/youtube-mixes/ren-ran-Jy6luiLBsrk-unsplash.jpg",
+        "videosCount": 50
+    }
+]

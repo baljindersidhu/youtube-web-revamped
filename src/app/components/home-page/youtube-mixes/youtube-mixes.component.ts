@@ -11,7 +11,7 @@ import { PlaylistScaffold } from 'src/app/interfaces/playlist';
 })
 export class YoutubeMixesComponent implements OnInit {
 
-	private playlists: Playlist[] = [];
+	public playlists: Playlist[] = [];
 	private sink: SubscriptionSink = new SubscriptionSink();
 
 	constructor(private restSerivce: RestService) { }

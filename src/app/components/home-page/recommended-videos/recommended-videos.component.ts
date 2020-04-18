@@ -12,7 +12,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 export class RecommendedVideosComponent implements OnInit {
 
 	private sink: SubscriptionSink = new SubscriptionSink();
-	private videos: RecommendedVideo[] = [];
+	public videos: RecommendedVideo[] = [];
 
 	constructor(private restService: RestService) { }
 

@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.less']
 })
 export class AppComponent {
-    private appVersion: string = "YouTube App v2.45";
+    public appVersion: string = "YouTube App v2.45";
 }

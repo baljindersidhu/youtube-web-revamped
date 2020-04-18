@@ -11,7 +11,7 @@ import { PopularChannelScaffold } from 'src/app/interfaces/popular-channel-scaff
 })
 export class PopularChannelsComponent implements OnInit {
 
-	private channels: PopularChannel[] = [];
+	public channels: PopularChannel[] = [];
 	private sink: SubscriptionSink = new SubscriptionSink();
 
 	constructor(private restService: RestService) { }
