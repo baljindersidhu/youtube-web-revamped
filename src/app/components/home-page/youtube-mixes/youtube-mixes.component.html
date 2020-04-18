@@ -1,3 +1,18 @@
-<p>
-  youtube-mixes works!
-</p>
+<div class="mixesList">
+
+	<div class="cardContainer positionRelative" *ngFor="let playlist of playlists">
+		<div class="positionAbsolute backdrop" [ngStyle]="{'background-image': 'url(' + playlist.caption + ')'}"></div>
+		<div class="row cardContent positionRelative">
+			<div class="playlist">
+				<div class="playlistName">{{playlist.title}}</div>
+				<div class="playlistVibe">vibes</div>
+				<div class="icon"><i class="mdi mdi-play"></i></div>
+			</div>
+			<div class="fillParent">
+				<div class="playlistVideosCount">{{'+' + playlist.videosCount}}</div>
+			</div>
+		</div>
+	</div>
+
+
+</div>

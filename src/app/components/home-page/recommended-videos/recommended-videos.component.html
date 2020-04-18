@@ -1,3 +1,19 @@
-<p>
-  recommended-videos works!
-</p>
+<div class="recommendations-list">
+	<div class="row">
+		<div class="recommendation" *ngFor="let video of videos">
+			<div class="caption positionRelative"
+				[ngStyle]="{'background-image': 'url(' + video.getCaption() + ')'}">
+				<div class="positionAbsolute duration">{{video.getDuration()}}</div>
+			</div>
+
+			<div class="videoDetails">
+				<div class="title">{{video.getTitle()}}</div>
+				<div class="row centerV">
+					<div class="channelName">{{video.getChannelName()}}</div>
+					&nbsp;&bull;&nbsp;
+					<div class="postedAt">{{video.getPostedAt()}}</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

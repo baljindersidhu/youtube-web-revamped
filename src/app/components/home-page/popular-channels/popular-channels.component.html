@@ -1,3 +1,20 @@
-<p>
-  popular-channels works!
-</p>
+<div class="channelsList">
+	
+
+	<div class="channel positionRelative" *ngFor="let channel of channels">
+		<div class="row centerV channelDetails positionRelative">
+			<div class="avatar">
+				<img [src]="channel.caption" alt="channel_avatar" arai-label="Channel Avatar">
+			</div>
+			<div class="channelName">{{channel.channelName}}</div>
+			<div class="bullet">&bull;</div>
+			<div class="subscribersCount">{{channel.subscribersCount + " subscribers"}}</div>
+			<div class="bullet">&bull;</div>
+			<div class="videosCount">{{channel.videosCount + " videos"}}</div>
+			<div class="fillParent"></div>
+			<div class="primaryButton">subscribe</div>
+		</div>
+
+	</div>
+
+</div>

@@ -1,0 +1,80 @@
+.channelsList{
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+
+    .channel{
+        margin-right: 3vw;
+        cursor: pointer;
+        transition: transform 0.25s linear;
+
+        &::before{
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: white;
+            opacity: 0.07;
+        }
+
+        &:first-child{
+            &::before{
+                border-top-left-radius: 1vh;
+                border-top-right-radius: 1vh;
+            }
+        }
+
+        &:last-child{
+            &::before{
+                border-bottom-left-radius: 1vh;
+                border-bottom-right-radius: 1vh;
+            }
+        }
+
+        &:hover{
+            transform: scale(1.05);
+            &::before{
+                border-radius: 1vh;
+            }
+        }
+    }
+
+    .channelDetails{
+        font-size: 1.5vh;
+        padding: 1.5vh 1vw;
+        .avatar{
+            height: 4vh;
+            width: 2vw;
+            margin-right: 1vw;
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+
+        .channelName{
+            font-weight: bold;
+        }
+
+        .subscribersCount{
+            opacity: 0.4;
+        }
+
+        .videosCount{
+            .subscribersCount;
+        }
+
+        .bullet{
+            .subscribersCount;
+            padding: 0vh 0.45vw;
+        }
+
+        .primaryButton{
+            font-size: 1.1vh;
+            padding: 0.5vh 1vw;
+            border-radius: 0.75vh;
+            letter-spacing: 0.08vw;
+        }
+    }
+}

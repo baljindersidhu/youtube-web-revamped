@@ -1,0 +1,95 @@
+.mixesList{
+    display: inline-grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-template-columns: auto auto;
+    grid-gap: 3vh 2vw;
+    opacity: 0;
+    animation: fade-in 0.5s ease-in-out;
+    animation-delay: 1.75s;
+    animation-fill-mode: forwards;
+
+    .cardContainer{
+        width: 18vw;
+        height: 16vh;
+        border-radius: 1vh;
+        overflow: hidden;
+
+        @backdrop-top: 0vh;
+        @backdrop-right: 0vw;
+        @backdrop-height: 100%;
+        @backdrop-width: 6.5vw;
+        @backdrop-blur: 1vh;
+        @backdrop-cover-color: black;
+
+        .backdrop{
+            top: 0vh;
+            left: 0vw;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+            &::before{
+                content: '';
+                position: absolute;
+                right: @backdrop-right;
+                top: @backdrop-top;
+                background: inherit;
+                width: @backdrop-width;
+                height: @backdrop-height;
+                filter: blur(@backdrop-blur);
+    
+            }
+    
+            &::after{
+                content: '';
+                position: absolute;
+                right: @backdrop-right;
+                top: @backdrop-top;
+                width: @backdrop-width;
+                height: @backdrop-height;
+                background-color: @backdrop-cover-color;
+                transition: opacity 0.25s linear;
+                opacity: 0.4;
+            }
+        }
+
+        &:hover{
+            .backdrop{
+                &::after{
+                    opacity: 0.6;
+                }
+            }
+        }
+
+    }
+
+    .cardContainer{
+        cursor: pointer;
+        .cardContent{
+            padding: 2vh 1vw;
+            .playlist{
+                width: 10.5vw;
+                font-size: 1.5vh;
+                letter-spacing: 0.05vw;
+    
+                .playlistVibe{
+                    font-size: 1.35vh;
+                    font-weight: bold;
+                }
+
+                .icon{
+                    font-size: 2.25vh;
+                    margin-top: 4.5vh;
+                }
+            }
+
+            .playlistVideosCount{
+                text-align: center;
+                margin-top: 4.5vh;
+            }
+        }
+
+    }
+}
